@@ -16,6 +16,9 @@ public class Website {
         } catch (InterruptedException e) {
             //
         }
-        return (int) (Math.random() * 1000000);
+        int price = (int) (Math.random() * 1000000);
+        //System.out.println("Price: ");
+        //System.out.println(price);
+        return price;
     }
 }
