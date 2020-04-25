@@ -1,5 +1,3 @@
-import java.lang.reflect.*;
-
 public class AssistantDecoder {
     private Assistant a;
     AssistantDecoder(Assistant assistant) {

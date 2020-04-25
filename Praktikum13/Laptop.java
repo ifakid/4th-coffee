@@ -1,5 +1,3 @@
-package Praktikum13;
-
 public class Laptop {
     private Integer serial_number = 22;
 

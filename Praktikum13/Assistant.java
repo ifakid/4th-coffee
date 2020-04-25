@@ -1,5 +1,3 @@
-package Praktikum13;
-
 import java.util.*;
 
 class Assistant {
