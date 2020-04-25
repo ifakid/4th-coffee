@@ -1,9 +1,3 @@
-/*
-Nama: Andjani Kiranadewi
-NIM: 13518109
-File: NegativeExpression.java
-*/
-
 class NegativeExpression implements Expression {
 	protected Expression x;
 

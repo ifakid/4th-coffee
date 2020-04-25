@@ -1,9 +1,3 @@
-/*
-Nama: Andjani Kiranadewi
-NIM: 13518109
-File: AddExpression.java
-*/
-
 class AddExpression implements Expression {
 	protected Expression x;
 	protected Expression y;

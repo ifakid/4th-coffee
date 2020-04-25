@@ -1,9 +1,3 @@
-/*
-Nama: Andjani Kiranadewi
-NIM: 13518109
-File: Stack.java
-*/
-
 class Stack {
 	public int[] stack;
 	public int size;
