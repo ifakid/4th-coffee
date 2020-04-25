@@ -1,10 +1,8 @@
-package Praktikum12;
-
 import java.util.HashMap;
 import java.util.Map;
 
 public class WebPemilu {
-    private Map<String, Integer> votes;
+    public Map<String, Integer> votes;
 
     public WebPemilu() {
         votes = new HashMap<String, Integer>();
@@ -14,14 +12,14 @@ public class WebPemilu {
         // Di sini, website melakukan verifikasi. Verifikasi butuh waktu yang
         // lama. Untuk menyingkat soal, anggap saja Thread.sleep(1) ini melakukan verifikasi.
         try {
-            Thread.sleep(1);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             System.out.println(e);
         }
         return true;
     }
 
-    public void addVote(String vote) {
+    public synchronized void addVote(String vote) {
         Integer previousVoteCount = votes.get(vote);
         if (previousVoteCount == null) {
             previousVoteCount = 0;
@@ -32,10 +30,14 @@ public class WebPemilu {
     public Thread receiveVote(String vote) {
         // ubah kode berikut agar mengembalikan thread yang akan menambah vote
         // PENTING: jangan start thread, cukup return saja
-        if (verify(vote)) {
-            addVote(vote);
-        }
-        return null;
+        Thread a = new Thread(){
+            public void run(){
+                if (verify(vote)) {
+                    addVote(vote);
+                }
+            }
+        };
+        return a;
     }
 
     public void printResult() {
