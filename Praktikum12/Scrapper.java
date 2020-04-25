@@ -1,5 +1,3 @@
-package Praktikum12;
-
 import java.util.ArrayList;
 
 class Scrapper implements ScrapperThread.Listener{

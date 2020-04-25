@@ -1,5 +1,3 @@
-package Praktikum12;
-
 public class Position {
     private int x;
     private int y;

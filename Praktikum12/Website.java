@@ -1,5 +1,3 @@
-package Praktikum12;
-
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Website {
