@@ -1,1 +1,1 @@
-# Praktikum Java
+# Java
